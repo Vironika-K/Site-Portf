@@ -1,0 +1,103 @@
+<!doctype html>
+<html> 
+<head>
+<meta charset="utf-8">
+
+
+<title> Сайтик </title>
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+	<div id="spinner-container" style="position: fixed; top:50%; left:50%; transform: translate(-50%, -50%);"></div>
+<div class="wrapper">
+<header class="header">
+  <div class="container">
+    <div class="header-nav">
+      <a href="Index.html" class="Logo">Кулакова В.И.</a>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="1.html" class="nav-link">1</a></li>
+          <li class="nav-item"><a href="2.html" class="nav-link">2</a></li>
+          <li class="nav-item"><a href="3.html" class="nav-link">3</a></li>
+          <li class="nav-item"><a href="4.html" class="nav-link">4</a></li>
+          <li class="nav-item"><a href="5.html" class="nav-link">5</a></li>
+          <li class="nav-item"><a href="6.html" class="nav-link">6</a></li>
+          <li class="nav-item"><a href="7.html" class="nav-link active">7</a></li>
+          <li class="nav-item"><a href="8.html" class="nav-link">8</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+	
+	
+	<main>
+		<section class="gg">
+		
+		<div class= "gr">
+	        <div class= "g">
+			 <h1 align="center" >Задание 7. Маска</h1>
+			 <p class="p2" align="center">*** Не вызвало каких либо эмоций, работать с текстом скучно ***</p>
+			</div>
+		</div>
+		</section>	
+		<div class= "gr">
+            <div class= "gre">
+			<iframe src="./an/w7/7лаба.html" alt="7 Задание" border="4"></iframe>
+           </div>
+        
+		</div>
+	</main>
+	   <footer id="F">
+		  <div class="container"> 
+			  <div class="con-t"> 
+		  <p  style="color: whitesmoke"><br> КОНТАКТЫ</p>
+				  <div class="cont-c">
+		  <p1 style="color: whitesmoke"> Телефон:<br>7-965-555-55-55</p1>
+
+			  </div>
+				  <div class="cont-c">
+		  
+		 <p1  style="color: whitesmoke"> ВК<br>@id1235456</p1>
+
+			  </div>
+				  <div class="cont-c">
+		  
+		  <p1 style="color: whitesmoke"> Почта:<br>Chio@gmail.com</p1>
+			  </div>
+		  </div>
+			  </div>
+  </footer>
+</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const target = document.getElementById('spinner-container');
+    const opts = {
+      lines: 13,
+      length: 28,
+      width: 14,
+      radius: 42,
+      scale: 1,
+      corners: 1,
+      color: '#FFA500',
+      speed: 1,
+      position: 'absolute'
+    };
+    const spinner = new Spinner(opts).spin(target);
+
+    setTimeout(() => spinner.stop(), 400);
+  });
+</script>
+</body>
+</html>
